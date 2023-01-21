@@ -30,6 +30,7 @@ jobs:
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm install
+          npm run build --if-present
           popd
 
       - name: 'Run Azure Functions Action'
@@ -39,4 +40,4 @@ jobs:
           app-name: 'hackz-nokogiri-linebot'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_297BA275BFA644C18442E24147F392AD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D81C18C8A9B547D4B4E795CB5A94DDF5 }}

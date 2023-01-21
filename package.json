@@ -9,7 +9,12 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "@line/bot-sdk": "^7.5.2",
+    "azure-function-express": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
   "devDependencies": {
     "@azure/functions": "^3.0.0",
     "@types/node": "16.x",
