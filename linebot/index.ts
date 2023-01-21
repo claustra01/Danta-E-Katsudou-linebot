@@ -13,14 +13,18 @@ module.exports = async function (context, req) {
     
     if (req.query.message || (req.body && req.body.events)) {
         if (req.body && req.body.events[0]) {
-            let message = {
+
+            const message = {
                 type: "text",
                 text: req.body.events[0].message.text
             }
+
+
             console.log(message);
             if (req.body.events[0].replyToken) {
                 client.replyMessage(req.body.events[0].replyToken, message);
             }
+
         }
         else {
             context.res = {
