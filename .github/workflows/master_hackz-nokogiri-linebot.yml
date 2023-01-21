@@ -40,4 +40,4 @@ jobs:
           app-name: 'hackz-nokogiri-linebot'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8AAA1CBFA27549059E37A43A63836E26 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_297BA275BFA644C18442E24147F392AD }}
