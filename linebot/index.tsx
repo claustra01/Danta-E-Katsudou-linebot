@@ -1,6 +1,4 @@
-"use strict";
-require('dotenv').config();
-
+const dotenv = require("dotenv").config();
 const express = require("express");
 const line = require("@line/bot-sdk");
 const PORT = process.env.PORT || 5000;
